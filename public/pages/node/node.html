@@ -1,0 +1,62 @@
+<h1>1.What is Node?</h1>
+<p>NodeJS is a JS server-side environment, allows developers to run JavaScript code outside of a web browser. With Node.js, developers can build web servers, command-line tools, real-time applications, scripts. It provides an environment for executing JavaScript code outside of the web browser</p>
+<h1>2.JS Data Types</h1>
+<ul>
+    <li>Number</li>
+    <li>String</li>
+    <li>Boolean</li>
+    <li>Null</li>
+    <li>Undefined</li>
+    <li>Symbol</li>
+    <li>BigInt</li>
+</ul>
+
+<h3>Client server model? Client sends a quest, server send respond</h3>
+<h1>3.What is Api?</h1>
+<p>APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols such as HTTP, SOAP, and REST.Api allows to exchange data between applications</p>
+
+<h1>4.How do APIs work?</h1>
+<p>API architecture is usually explained in terms of client and server. The application sending the request is called the client, and the application sending the response is called the server.
+    he user initiates an API call that tells the application to do something, then the application will use an API to ask the web server to do something. The API is the middleman between the application and the web server, and the API call is the request.
+</p>
+<h1>5.What are REST APIs?</h1>
+<p>REST stands for Representational State Transfer. REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using HTTP.The main feature of REST API is statelessness. Statelessness means that servers do not save client data between requests. Client requests to the server are similar to URLs you type in your browser to visit a website. The response from the server is plain data, without the typical graphical rendering of a web page.</p>
+<h1>5.API design for movies</h1>
+<table>
+    <tr>
+        <th>HTTP Method</th>
+        <th>Endponint</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/movies</td>
+        <td>Fetch all movies(data)</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/movies/&lt;id&gt;</td>
+        <td>Fetch a specific movie by id</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/movies</td>
+        <td>Add a new movie</td>
+    </tr>
+    <tr>
+        <td>PUT</td>
+        <td>/movies/&lt;id&gt;</td>
+        <td>Update an existing movie</td>
+    </tr>
+    <tr>
+        <td>PATCH</td>
+        <td>/movies/&lt;id&gt;</td>
+        <td>Update an existing movie</td>
+    </tr>
+    <tr>
+        <td>DELETE</td>
+        <td>/movies/&lt;id&gt;</td>
+        <td>Deletes an existing movie by id</td>
+    </tr>
+    
+</table>

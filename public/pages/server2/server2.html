@@ -1,0 +1,13 @@
+<h1>1. Static Files</h1>
+<p>The code <code>"app.use(express.static('public'))"</code>is used in a Node.js application to serve static files such as HTML, CSS, JavaScript, images, and other assets to the client.</p>
+<p>The "express.static" middleware function is used to serve static files from a directory. In this case, the "public" directory is specified as the directory from which to serve static files. This means that any files in the "public" directory can be accessed by clients using their URL path.</p>
+<p>You should not store sensistive files in the public directory, files in public folder can be accesed by client</p>
+<h1>2. Don't reuse same id in API</h1>
+<p>It is not recommended to reuse same id even if the object with id waa deleted and no object use the id. It can lead to confusion and potential errors in your API. For example, if an external system has stored a reference to the deleted object's ID, reusing that ID could cause issues when they try to access that reference.</p>
+<p>Additionally, reusing IDs can also make it more difficult to track the history of your data, as it may not be clear which object a particular ID corresponds to at any given time.</p>
+<h1>3. API update/edit</h1>
+<p>Put - replace entire resource</p>
+<p>Patch - repace element(s) resource</p>
+<h1>4. XSS - Cross-Site Scripting</h1>
+<p>Cross-site scripting (XSS) is a type of injection attack in which a threat actor inserts data, such as a malicious script, into content from trusted websites. The malicious code is then included with dynamic content delivered to a victim's browser.</p>
+<p>Dont use innerHTML - It it allows  HTML to be inserted into a web page, including scripts that could be used for cross-site scripting (XSS) attacks. It can potentially overwrite other attributes or event listeners of an element, leading to unexpected behavior or security issues. It's recommended to use methods like <code> createElement, appendChild, setAttribute</code>, and innerText instead of innerHTML to manipulate the contents of the web page.</p> 

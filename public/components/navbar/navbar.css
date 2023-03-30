@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #1A81F4;
+    height: 90px;
+    padding: 20px;
+  
+}
+
+
+.nav--logo_text {
+      display: flex;
+      gap: 20px;
+      margin-right: auto;
+      font-weight: 700;
+      font-size: 22px;
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+
+
+.wrapper {
+    font-weight: 700;
+    font-size: 18px;
+    background-color:#23C5BF;
+    padding: 10px;
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+
+.wrapper:hover{
+    transform: scale(1.1);
+    background-color: palegreen;
+}
+
+.nav--icon {
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.admin{
+    margin-right: 10px;
+      font-weight: 700;
+      font-size: 22px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: bisque;
+}
+
+

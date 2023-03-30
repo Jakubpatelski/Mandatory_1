@@ -1,0 +1,59 @@
+<h1>1. JS Scope</h1>
+<p>Scoping in JavaScript refers to the set of rules that determine where variables and functions can be accessed within a program. JavaScript has two types of scope: global scope and local scope.</p>
+<p>Global scope refers to variables or functions that are declared outside of any function, and can be accessed from anywhere in the program. Local scope, on the other hand, refers to variables or functions that are declared inside a function, and can only be accessed within that function.</p>
+<p>In general, it is recommended to use const when declaring variables, as this keyword creates a variable that is read-only and cannot be reassigned a new value.</p>
+<p>By using const and let appropriately, we can ensure that our variables are scoped correctly and that our code is more readable and maintainable. It also helps to prevent bugs caused by accidental reassignment of variables that should be read-only.</p>
+
+<h1>2. Callback Function</h1>
+<p>A callback function is a function that is passed as an argument to another function and is executed when a specific event occurs or when a certain portion of code is executed.</p>
+
+<pre class="code">
+  // function
+  function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+  }
+  
+  // callback function
+  function callMe() {
+    console.log('I am callback function');
+  }
+  
+  // passing function as an argument
+  greet('Peter', callMe);
+  
+  // Output
+  // Hi Peter
+  // I am callback function
+  </pre>
+ 
+  
+
+
+<h1>3. Package.json</h1>
+<p><b>Package.json </b> file is a metadata file for Node.js projects that contains important information about the project, such as its name, version, dependencies, and scripts.</p>
+<h1>4. Node modules</h1>
+<p>Node modules- In Node.js, node_modulesis a directory that contains packages and dependencies installed by the Node Package Manager (NPM). When a developer installs a package or dependency using NPM, it is downloaded and stored in the node_modulesdirectory, along with any other dependencies required by that package. Node.js application requires a module or package, the require()function is used to load it. The use of node_modulesallows developers to easily manage and install dependencies for their Node.js projects. By using NPM to manage dependencies, developers can easily install, update, and remove packages as needed, without having to worry about managing dependencies manually</p>
+<h1>5. Strict Mode</h1>
+<p>Strict mode is a feature in JavaScript that enables a stricter set of rules for language syntax and behavior, making it easier to write more secure and reliable code. It is enabled by adding the statement <b>'use strict';</b> at the beginning of a script or function.</p>
+<h1>6. Functional Approach to Loops</h1>
+<p>A functional approach to loops is preferred because it avoids side effects, and involves using higher-order functions like map, filter, reduce, and forEach to manipulate collections of data without the need for traditional for or while loops.</p>
+
+<p>Imperative programming  is one that gives the computer a set of statements to perform a task.</p>
+<p>Functional programming is a form of declarative programming. You tell the computer what you want done by calling a method or function.</p>
+<code class="code">
+    let sum = 0;<br>
+    for (let i = 0; i &lt; nums.length; i++) {<br>
+      &nbsp;&nbsp;&nbsp;sum += nums[i];<br>
+    }<br>
+    const nums = [1, 2, 3, 4, 5];<br>
+    const sum = nums.reduce((acc, curr) =&gt; acc + curr, 0);<br>
+  </code>
+
+  <p>In this example, reduce takes an initial value of 0 and an accumulator function that takes the current sum and the current element of the array and returns a new sum.</p>
+  <p>Functional programming encourages us to think of loops as transformations of data, rather than as imperative statements that mutate state. By using higher-order functions, we can write more declarative and composable code that is easier to reason about and less error-prone.</p>
+
+  <h1>7. Why json?</h1>
+  <p>Every lanaguge can follow specification of json file and every server can interprete json format</p>
+  <h1>8. Anatomy of an URL</h1>
+  <img src="/assets/img/urlanatomy.jpeg" alt="" id="anatomyURL">
